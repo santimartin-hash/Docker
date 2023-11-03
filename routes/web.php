@@ -31,8 +31,5 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('chirps', ChirpController::class)
     ->only(['index', 'store', 'edit', 'update', 'destroy'])
-    ->middleware(['auth', 'verified','check_duplicate_chirp:store']);
-    
-
-
+    ->middleware(['auth', 'verified','CheckChirpDuplicado']);
 require __DIR__.'/auth.php';

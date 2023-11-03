@@ -26,7 +26,7 @@ class Kernel extends HttpKernel
 
     protected $routeMiddleware = [
         
-        'check_duplicate_chirp' => \App\Http\Middleware\CheckDuplicateChirp::class,
+        'CheckChirpDuplicado' => \App\Http\Middleware\CheckChirpDuplicado::class,
         'after.home' => \App\Http\Middleware\AfterHomeMiddleware::class,
         
     ];

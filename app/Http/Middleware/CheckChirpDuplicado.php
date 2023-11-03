@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Models\Chirp;
 
-class CheckDuplicateChirp extends Middleware
+class CheckChirpDuplicado 
 {
     /**
      * Handle an incoming request.
