@@ -28,7 +28,7 @@ class Kernel extends HttpKernel
         
         'CheckChirpDuplicado' => \App\Http\Middleware\CheckChirpDuplicado::class,
         'after.home' => \App\Http\Middleware\AfterHomeMiddleware::class,
-        
+        'before.home' => \App\Http\Middleware\AfterHomeMiddleware::class,
     ];
  
     
